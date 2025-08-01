@@ -28,5 +28,29 @@ function getHumanChoice() {
 
 console.log(getHumanChoice());
 
+// player score variables
+
+let humanScore = 0;
+let computerScore = 0;
+
 // function for playing a round of rock, paper, scissors
 
+function playRound(humanChoice, computerChoice) {
+    const human = humanChoice.toLowerCase();
+
+    if (human === computerChoice) {
+        return "it's a tie!";
+    } else if (
+        (human === "rock" && computerChoice === "scissors") ||
+         (human === "paper" && computerChoice === "rock") ||
+         (human === "scissors" && computerChoice === "paper")
+    ) {
+        //increment human score
+        return `You win! ${human} beats ${computerChoice}`;
+    } else {
+        //increment computer score
+        return `you lose! ${computerChoice} beats ${human}`;
+    };
+
+    };
+    
