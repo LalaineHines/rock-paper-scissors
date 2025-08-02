@@ -53,3 +53,13 @@ function checkWinner () {
         };
     };
 };
+
+function updateWinner (winner) {
+    roundResults.textContent = winnerResults[winner][0];
+    roundResults.style.color = winnerResults[winner][1];
+
+    optionBtn.forEach(button => {
+        button.removeEventListener('click', getPlayerChoice);
+    });
+};
+
