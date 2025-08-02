@@ -63,3 +63,8 @@ function updateWinner (winner) {
     });
 };
 
+function getPlayerChoice(e) {
+    let playerSelection = (e.target.id);
+    playerChoice = e.target.textContent;
+    playRound(playerSelection, computerPlay());
+};
