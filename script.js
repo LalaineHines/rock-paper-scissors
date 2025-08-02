@@ -37,3 +37,19 @@ function playRound (playerSelection, computerSelection) {
     checkWinner();
 };
 
+const winnerResults = {
+    computer: ["You lost the game to a computer", 'red'],
+    player: ["You win the game!!!", 'green'],
+    tie: ["The game is a tie!", 'blue']
+};
+
+function checkWinner () {
+    if (compScore === 5 || playerScore === 5) {
+        if (compScore === playerScore) {
+            updateWinner(win);
+        } else {
+            let win = `${(compScore > playerScore) ? 'computer' : 'player'}`;
+            updateWinner(win);
+        };
+    };
+};
