@@ -95,3 +95,29 @@ h3 {
 }
 
 /* Labels */
+
+#resultsLabel {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5f0b3d;
+}
+
+#playerLabel {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5f0b3d;
+    padding-left: 15px;
+}
+
+#compLabel {
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5f0b3d;
+    padding-left: 18px;
+    padding-right: 3px;
+}
